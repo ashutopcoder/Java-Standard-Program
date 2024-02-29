@@ -1,4 +1,4 @@
-//AlternatePrime
+//AlternatePrime Program
 import java.util.Scanner;
 public class AlternatePrime{
 	public static void main(String args[]){
