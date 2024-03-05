@@ -6,7 +6,6 @@ public class LargestNumber{
 			if(ar[i]>large){
 				large=ar[i];
 			}
-				
 		}
 		return large;
 	}
