@@ -11,7 +11,7 @@ public class UserDefineArray{
 			arr[i]=sc.nextInt();
 		System.out.print("Your ArrayIs Here : ");
 		for(int i=0;i<arr.length;i++)
-			System.out.print(arr[i]+" ");
+			System.out.print(arr[i]+"  ");
 			
 	}
 }
