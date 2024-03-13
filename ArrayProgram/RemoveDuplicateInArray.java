@@ -10,7 +10,7 @@ public class RemoveDuplicateInArray{
 		return ar;
 	}
 	public static void main(String args[]){
-		int[] arr={2,3,4,5,6,7,7,2,2,3,3,1,17};
+		int[] arr={2,3,4,5,6,7,7,7,2,3,3,1,17};
 		int[] newArr=Check(arr);
 		for(int i=0;i<newArr.length;i++){
 			if(newArr[i]!=-1)
