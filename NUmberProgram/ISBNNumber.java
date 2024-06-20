@@ -1,14 +1,22 @@
-//ISBN Number
-//In This Number Has 10 Digits
-import java.util.Scanner;
-public class ISBNNumber{
+//18) ISBN Number Java
+class ISBNNumber{
 	public static void main(String args[]){
-		Scanner sc =new Scanner(System.in);
-		System.out.print("Enter A Number : ");
-		String num=sc.next();
-		if(num.length()==10)
-			System.out.print("Number is ISBN");
-		else
-			System.out.print("Number Is Not ISBN");
-}
+		String num="1259060977";
+		int sum=0;
+		int j=10;
+		if(num.length()==10){
+			for(int i=0;i<num.length();i++){
+					sum=sum+(((int)(num.charAt(i))-48)*j);
+					j--;
+			}
+			if(sum%11==0){
+				System.out.println("ISBN Number");
+			}
+			else{
+				System.out.println("Not ISBN Number");
+			}
+		}else{
+			System.out.println("Number Is Not ISBN Number...!");
+		}
+	}
 }

@@ -1,7 +1,7 @@
 package com.demo;
 
 public class TechNumbers {
-	public static void main(String args) {
+	public static void main(String args[]) {
 		int num = 2025;
 		int temp = num;
 		int count = 0;
