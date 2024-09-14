@@ -9,10 +9,10 @@ class OccurancesOfElement{
 			for(int j=i+1;j<arr.length;j++){
 				if((arr[i]==arr[j])&&(arr[i]!=-1)){
 					count++;
-					arr[j]=-1;
+					arr[j]=Integer.MIN_VALUE;
 				}
 			}
-			if(arr[i]!=-1)
+			if(arr[i]!=Integer.MIN_VALUE)
 			System.out.println(arr[i]+" Occurance Is "+count);
 		}
 	}
