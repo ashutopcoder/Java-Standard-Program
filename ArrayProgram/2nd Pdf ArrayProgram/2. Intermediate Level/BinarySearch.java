@@ -1,4 +1,5 @@
 //30. Write program to implement a binary search on an array. 
+//The Array Must Be Sorted Form
 import java.util.Scanner;
 class BinarySearch{
 	public static int Binary(int[] arr,int num){
