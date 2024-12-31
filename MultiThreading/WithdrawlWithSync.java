@@ -13,7 +13,7 @@ class SBI{
 			}
 		}
 }
-class Thread1 extends Thread{
+class Thread1 implements Runnable{
 	private SBI obj;
 	private int amt;
 	Thread1(SBI obj,int amt){
@@ -27,8 +27,10 @@ class Thread1 extends Thread{
 class WithdrawlWithSync{
 	public static void main(String args[]){
 		SBI obj=new SBI();
-		Thread1 t1=new Thread1(obj,7000);
-		Thread1 t2=new Thread1(obj,9000);
+		Thread1 th1=new Thread1(obj,7000);
+		Thread1 th2=new Thread1(obj,9000);
+		Thread t1=new Thread(th1);
+		Thread t2=new Thread(th2);
 		t1.start();
 		t2.start();
 	}

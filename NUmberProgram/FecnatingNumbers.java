@@ -1,7 +1,7 @@
-package com.demo;
-
 import java.util.Scanner;
-// 49-57(AsCii value 1to9:
+// 48-57(AsCii value 1to9:
+//A-Z _->65-90
+//a-z -> 97-122
 public class FecnatingNumbers {
 	public static boolean Facinating(int num) {
 		String str = ""+num*1+num*2+num*3;
